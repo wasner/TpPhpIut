@@ -6,10 +6,8 @@
  * Time: 20:39
  */
 include 'util/util.inc.php'; //requete_db_mysql
+include_once 'Excluded/Connect_db.php'; //Permet de chercher les informations de connection à la BD
 //Partie de connexion à la base de donnée
-$dbHost = "mysql-phpiutaix2.alwaysdata.net";
-$dbLogin = "114889";
-$dbPass = "jeremy";
 echo "Connexion à la base de donnée en cours ..";
 echo '<br/>';
 $dbLink = mysqli_connect($dbHost, $dbLogin, $dbPass) or die('Erreur de connexion au serveur :' .mysqli_connect_error());
